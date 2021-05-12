@@ -57,6 +57,6 @@ Then, all the parameters from the pointers in the Value Tree State are retrieved
 
 ## Result and comments
 
-After building the plugin and running it on JUCE’s Plug-in Host, the plugin seems to work well with all the available waveforms and filter types.
+After building the plugin and running it on JUCE Plug-in Host, the plugin seems to work well with all the available waveforms and filter types.
 
 ![Screenshot](screenshots/test.png)
