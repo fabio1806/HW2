@@ -205,20 +205,18 @@ void SubSynthAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
         
     if (sine){
         oscillators[0].process(context);
-        gain.process(context);
     }
     else if (square){
         oscillators[1].process(context);
-        gain.process(context);
     }
     else if (triangle){
         oscillators[2].process(context);
-        gain.process(context);
     }
     else if (saw){
         oscillators[3].process(context);
-        gain.process(context);
     }
+	
+    gain.process(context);
     
     // 2) Filter
     // Update the filter state and process it to context block
